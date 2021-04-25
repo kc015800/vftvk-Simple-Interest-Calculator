@@ -16,8 +16,11 @@ function compute()
     console.log(interest);
     var year = new Date().getFullYear()+parseInt(years);
     console.log(year);
-    var data = "If you deposit "+principal+",<br>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
-    document.getElementById("result").innerHTML=data;
+    var res = "If you deposit, <span class = 'highlight'>" + principal+
+            "</span> ,<br> at an interest rate of <span class = 'highlight'>" +rate+
+            "</span>. <br> You will receive an amount of <span class = 'highlight'>" +interest+
+            "</span>, <br> in the year <span class = 'highlight'>"+year;
+  document.getElementById("result").innerHTML = res;
     console.log("inner html executed");
 }
 
